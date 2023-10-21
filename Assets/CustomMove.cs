@@ -20,7 +20,7 @@ public class CustomMove : MonoBehaviour
         Vector3 direction = new Vector3(hor,0, ver);
         Vector3 newDirection = cam.transform.TransformDirection(direction);
         Vector3 lastDirection = new Vector3(newDirection.x,0, newDirection.z);
-
+        Debug.Log(Input.GetAxis("Horizontal2"));
         rb.velocity = lastDirection.normalized * speed; 
     }
 }
