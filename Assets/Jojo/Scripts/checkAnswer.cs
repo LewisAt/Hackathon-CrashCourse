@@ -1,3 +1,4 @@
+using MixedReality.Toolkit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,15 +18,23 @@ public class checkAnswer : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
+        
+        
+    }
+    public void addThingy(Collider other)
+    {
         if (other.GetComponent<InputEnum>() != null)
         {
-            if (checkInput.Count != Answer.Count)
+            for (int i = 0; i < InputCount.Length; i++)
             {
-                checkInput.Add(other.gameObject.GetComponent<InputEnum>());
-            }
-            if (checkInput.Count == Answer.Count)
-            {
-                CheckForCorrectInput();
+                if (InputCount[i].transform.childCount == 0)
+                {
+                    checkInput.Add(checkInput[i]);
+                }
+                else
+                {
+                    Debug.Log("Dogs are here");
+                }
             }
             //print(checkInput.Count);
         }
@@ -42,6 +51,10 @@ public class checkAnswer : MonoBehaviour
                 continue;
             }
         }
+    }
+
+    public void RemoveBlocks()
+    {
         StartCoroutine(poo());
     }
     IEnumerator poo()
@@ -50,13 +63,20 @@ public class checkAnswer : MonoBehaviour
         int numberOfInterations = checkInput.Count;
         for (int i = 0; i < numberOfInterations; i++)
         {
-            InputCount[i].transform.DetachChildren();
-            checkInput[i].transform.position = PooPosition.transform.position;
-            checkInput[i].GetComponent<BoxCollider>().enabled = true;
+            checkInput[0].GetComponent<BoxCollider>().enabled = false;
             Rigidbody rb = checkInput[0].GetComponent<Rigidbody>();
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+
+            checkInput[0].transform.parent = null;
+            checkInput[0].transform.position = PooPosition.transform.position;
+            checkInput[0].GetComponent<BoxCollider>().enabled = true;
+            
             rb.constraints = ~RigidbodyConstraints.FreezeAll;
             rb.AddForce(Vector3.down * 8);
+
+
             checkInput.RemoveAt(0);
+
             yield return new WaitForSeconds(0.5f);
         }
         GetComponent<BoxCollider>().enabled = false;
