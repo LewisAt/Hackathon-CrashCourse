@@ -16,21 +16,9 @@ public class checkAnswer : MonoBehaviour
         InputCount = GetComponent<BoardReceive>().SpawnPoints;
         boardReceive = GetComponent<BoardReceive>();
     }
-    public void addtoList(int count, InputEnum inputtedBlock)
+    public void addtoList(InputEnum inputtedBlock)
     {
-        print(Answer.Count + " = answer count and input count is: " + count);
         checkInput.Add(inputtedBlock);
-        if (count == Answer.Count)
-        {
-            if (CheckForCorrectInput() == false)
-            {
-                RemoveBlocks();
-            }
-            else
-            {
-                print("answer is correct!");
-            }
-        }    
     }
 
 
@@ -73,30 +61,29 @@ public class checkAnswer : MonoBehaviour
     }
     IEnumerator poo()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.5f);
         int numberOfInterations = checkInput.Count;
-        for (int i = 0; i < numberOfInterations; i++)
-        {
-            checkInput[0].GetComponent<BoxCollider>().enabled = false;
-            Rigidbody rb = checkInput[0].GetComponent<Rigidbody>();
-            rb.constraints = RigidbodyConstraints.FreezeAll;
 
-            checkInput[0].transform.parent = null;
-            checkInput[0].transform.position = PooPosition.transform.position;
-            checkInput[0].GetComponent<BoxCollider>().enabled = true;
+        for (int i = 0; i < numberOfInterations ; i++)
+        {
+            Debug.Log("I value is " + i +" "+ numberOfInterations);
+            Rigidbody rb = checkInput[i].GetComponent<Rigidbody>();
+
+            checkInput[i].gameObject.transform.parent = null;
+            checkInput[i].gameObject.transform.position = PooPosition.transform.position;
+            checkInput[i].gameObject.GetComponent<BoxCollider>().enabled = true;
             
             rb.constraints = ~RigidbodyConstraints.FreezeAll;
             rb.AddForce(Vector3.down * 8);
-
-
-            checkInput.RemoveAt(0);
             yield return new WaitForSeconds(0.5f);
         }
+        checkInput.Clear();
+        boardReceive.count = 0;
+
+
         GetComponent<BoxCollider>().enabled = false;
-        checkInput = new List<InputEnum>();
         yield return new WaitForSeconds(3f);
         GetComponent<BoxCollider>().enabled = true;
-        boardReceive.count = 0;
 
     }
 }
