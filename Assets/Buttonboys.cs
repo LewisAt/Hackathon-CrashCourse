@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Buttonboys : MonoBehaviour
 {
     public checkAnswer check;
@@ -16,6 +16,7 @@ public class Buttonboys : MonoBehaviour
             {
                 Debug.Log("you won ");
                 //GameWin();
+                SceneManager.LoadScene(2);
             }
             else
             {
