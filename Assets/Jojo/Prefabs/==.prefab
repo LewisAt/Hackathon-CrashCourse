@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4759319559704039845}
   - component: {fileID: 6645008788484796844}
   m_Layer: 0
-  m_Name: If
+  m_Name: ==
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 34f59218ebc9c4d37891070c2fc69e7c, type: 2}
+  - {fileID: 2100000, guid: 8f33dccb658684742896a1f04d1b0aa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: if
+  m_text: ==
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
