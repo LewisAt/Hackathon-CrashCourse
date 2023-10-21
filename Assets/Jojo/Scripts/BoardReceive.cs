@@ -19,6 +19,7 @@ public class BoardReceive : MonoBehaviour
             if (count == SpawnPoints.Length) return;
             if (SpawnPoints[count].transform.childCount >= 0)
             {
+                print(other.GetComponent<InputEnum>().input + " joined");
                 other.transform.parent = SpawnPoints[count].transform;
                 other.transform.localPosition = Vector3.zero;
                 other.GetComponent<BoxCollider>().enabled = false;

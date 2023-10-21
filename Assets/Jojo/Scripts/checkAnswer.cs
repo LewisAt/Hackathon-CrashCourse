@@ -19,14 +19,17 @@ public class checkAnswer : MonoBehaviour
     {
         if (other.GetComponent<InputEnum>() != null)
         {
-            checkInput.Add(other.gameObject.GetComponent<InputEnum>());
+            if (checkInput.Count != Answer.Count)
+            {
+                checkInput.Add(other.gameObject.GetComponent<InputEnum>());
+            }
+            if (checkInput.Count == Answer.Count)
+            {
+                CheckForCorrectInput();
+            }
             //print(checkInput.Count);
         }
-        if (checkInput.Count == Answer.Count)
-        {
-            CheckForCorrectInput();
-            return;
-        }
+        
     }
     void CheckForCorrectInput()
     {
@@ -35,14 +38,15 @@ public class checkAnswer : MonoBehaviour
         {
             if (checkInput[i] != Answer[i])
             {
-                return;
+                print("wrong answer in" + i);
+                continue;
             }
-            StartCoroutine(poo());
         }
-        Debug.Log("CorrectAnswerWasfound");
+        StartCoroutine(poo());
     }
     IEnumerator poo()
     {
+        yield return new WaitForSeconds(3f);
         int numberOfInterations = checkInput.Count;
         for (int i = 0; i < numberOfInterations; i++)
         {
@@ -51,8 +55,9 @@ public class checkAnswer : MonoBehaviour
             checkInput[0].GetComponent<BoxCollider>().enabled = true;
             Rigidbody rb = checkInput[0].GetComponent<Rigidbody>();
             rb.constraints = ~RigidbodyConstraints.FreezeAll;
+            rb.AddForce(Vector3.down * 3);
             checkInput.RemoveAt(0);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
         }
         yield return new WaitForSeconds(3f);
         boardReceive.count = 0;
