@@ -14,7 +14,11 @@ using UnityEngine;
 using System.Collections;
 
 namespace DigitalRuby.Earth
+
 {
+    
+
+
     public class MoveScript : MonoBehaviour
     {
         public float Speed = 10.0f;
