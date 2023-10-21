@@ -62,7 +62,7 @@ public class checkAnswer : MonoBehaviour
         GetComponent<BoxCollider>().enabled = false;
         yield return new WaitForSeconds(3f);
         boardReceive.count = 0;
-        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = true;
 
     }
 }
