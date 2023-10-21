@@ -12351,6 +12351,14 @@ PrefabInstance:
       value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
+      propertyPath: m_Flare
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: m_Range
       value: 100
       objectReference: {fileID: 0}
@@ -12367,6 +12375,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: m_SpotAngle
       value: 54
       objectReference: {fileID: 0}
@@ -12376,6 +12392,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: m_InnerSpotAngle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
+      propertyPath: m_BounceIntensity
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8127004207478892869, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}

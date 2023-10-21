@@ -5,6 +5,7 @@ using UnityEngine;
 public class Buttonboys : MonoBehaviour
 {
     public checkAnswer check;
+    public AudioClip winGameDialog;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Hands")
@@ -19,5 +20,10 @@ public class Buttonboys : MonoBehaviour
                 check.RemoveBlocks();
             }
         }
+    }
+
+    public void GameWin()
+    {
+
     }
 }
