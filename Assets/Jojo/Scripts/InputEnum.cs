@@ -7,11 +7,21 @@ public class InputEnum : MonoBehaviour
     public enum ListOfInputs
     {
         If,
-        equals
+        equals,
+        notEquals,
+        Null,
+        Print,
+        send,
+        help,
+        Void
     }
     public ListOfInputs input;
+    Vector3 spawn;
+
     private void Start()
     {
-        GetComponent<Rigidbody>().AddForce(Vector3.forward * 4);
+        spawn = transform.position;
     }
+
+
 }

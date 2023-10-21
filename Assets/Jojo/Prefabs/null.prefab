@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 0
+  input: 3
 --- !u!54 &6645008788484796844
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &5665340224186917412
 GameObject:
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: if
+  m_text: Null
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4
+  m_fontSize: 3.65
   m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 1
