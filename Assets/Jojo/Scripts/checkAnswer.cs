@@ -55,7 +55,7 @@ public class checkAnswer : MonoBehaviour
             checkInput[0].GetComponent<BoxCollider>().enabled = true;
             Rigidbody rb = checkInput[0].GetComponent<Rigidbody>();
             rb.constraints = ~RigidbodyConstraints.FreezeAll;
-            rb.AddForce(Vector3.down * 3);
+            rb.AddForce(Vector3.down * 8);
             checkInput.RemoveAt(0);
             yield return new WaitForSeconds(0.5f);
         }

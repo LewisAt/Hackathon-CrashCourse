@@ -22,6 +22,7 @@ public class BoardReceive : MonoBehaviour
                 print(other.GetComponent<InputEnum>().input + " joined");
                 other.transform.parent = SpawnPoints[count].transform;
                 other.transform.localPosition = Vector3.zero;
+                other.transform.rotation = Quaternion.identity;
                 other.GetComponent<BoxCollider>().enabled = false;
                 other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                 count++;
