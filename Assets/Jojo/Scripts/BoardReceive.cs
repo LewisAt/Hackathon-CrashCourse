@@ -35,7 +35,7 @@ public class BoardReceive : MonoBehaviour
                 other.transform.localPosition = Vector3.zero;
                 other.GetComponent<BoxCollider>().enabled = false;
                 other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-                AnswerCheckScript.addThingy(other);
+                AnswerCheckScript.addThingy(other.gameObject);
                 count++;
             }
             

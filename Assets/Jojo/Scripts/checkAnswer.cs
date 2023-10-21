@@ -21,7 +21,7 @@ public class checkAnswer : MonoBehaviour
         
         
     }
-    public void addThingy(Collider other)
+    public void addThingy(GameObject other)
     {
         if (other.GetComponent<InputEnum>() != null)
         {
@@ -29,7 +29,8 @@ public class checkAnswer : MonoBehaviour
             {
                 if (InputCount[i].transform.childCount == 0)
                 {
-                    checkInput.Add(checkInput[i]);
+                    checkInput.Add(other.GetComponent<InputEnum>());
+                    print(checkInput[i]);
                 }
                 else
                 {
