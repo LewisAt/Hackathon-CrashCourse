@@ -272,6 +272,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.9999998, z: 24.788677}
   m_Center: {x: 0.00000035372716, y: 0, z: -11.89434}
+--- !u!1 &1433221498872824783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945401920671684418}
+  m_Layer: 0
+  m_Name: PooSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &945401920671684418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433221498872824783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.89, z: 2.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1060565020070365225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923702696207012824
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,8 +559,8 @@ Transform:
   m_GameObject: {fileID: 6489517847034400768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.077, y: -0.23, z: 0.01}
-  m_LocalScale: {x: 7.354, y: 1, z: 6.958}
+  m_LocalPosition: {x: 0.054, y: 0.01, z: 0.086}
+  m_LocalScale: {x: 8.403857, y: 0.5290498, z: 7.091606}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1060565020070365225}
@@ -752,7 +783,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.3395, y: 0.643, z: 0.794}
-  m_LocalScale: {x: 0.080808096, y: 0.1, z: 0.048510864}
+  m_LocalScale: {x: 0.10548689, y: 0.1, z: 0.048510864}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7063037074396554535}
@@ -767,6 +798,7 @@ Transform:
   - {fileID: 822018261442916488}
   - {fileID: 5357737044636671111}
   - {fileID: 6257356411456359566}
+  - {fileID: 945401920671684418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &246746402946920045
@@ -860,6 +892,7 @@ MonoBehaviour:
   - {fileID: 3865258273871812918}
   - {fileID: 5244442344377871808}
   - {fileID: 6986368591709906443}
+  count: 0
 --- !u!65 &5068652934854289557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -879,8 +912,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.9414005, y: 1.0880187e-14, z: 8.084711}
-  m_Center: {x: 0.06034247, y: -1.4348642e-14, z: -0.14277874}
+  m_Size: {x: 8.198933, y: 0.48040387, z: 8.084711}
+  m_Center: {x: 0.1891092, y: 0.09970904, z: -0.14277859}
 --- !u!114 &3746050198562214378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,4 +933,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  PooPosition: {fileID: 86373874107214423}
+  PooPosition: {fileID: 1433221498872824783}
