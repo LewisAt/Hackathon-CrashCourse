@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoardReceive : MonoBehaviour
 {
     public GameObject[] SpawnPoints;
-    int count;
+    public int count;
 
     private void Start()
     {
@@ -16,11 +16,17 @@ public class BoardReceive : MonoBehaviour
     {
         if (other.GetComponent<InputEnum>() != null)
         {
+            print(other.GetComponent<InputEnum>().input + "entered collision");
             if (count == SpawnPoints.Length) return;
-            other.GetComponent<BoxCollider>().enabled = false;
-            other.transform.position = SpawnPoints[count].transform.position;
-            other.transform.parent = SpawnPoints[count].transform;
-            count++;
+            if(SpawnPoints[count].transform.childCount >= 0)
+            {
+                print(other.GetComponent<InputEnum>().input + "made it in");
+                other.transform.parent = SpawnPoints[count].transform;
+                other.transform.localPosition = Vector3.zero;
+                other.GetComponent<BoxCollider>().enabled = false;
+                other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                count++;
+            }
         }
     }
 }
