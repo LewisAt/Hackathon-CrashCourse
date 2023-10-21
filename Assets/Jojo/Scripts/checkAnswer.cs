@@ -10,11 +10,13 @@ public class checkAnswer : MonoBehaviour
     GameObject[] InputCount;
     public GameObject PooPosition;
     BoardReceive boardReceive;
+    int AnswerLength;
 
     private void Start()
     {
         InputCount = GetComponent<BoardReceive>().SpawnPoints;
         boardReceive = GetComponent<BoardReceive>();
+        AnswerLength = Answer.Count;
     }
     public void addtoList(InputEnum inputtedBlock)
     {
@@ -44,7 +46,7 @@ public class checkAnswer : MonoBehaviour
     public bool CheckForCorrectInput()
     {
 
-        for (int i = 0; i < Answer.Count; i++)
+        for (int i = 0; i < AnswerLength; i++)
         {
             if (checkInput[i] != Answer[i])
             {
