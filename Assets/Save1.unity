@@ -4943,7 +4943,7 @@ MonoBehaviour:
   background_color: {r: 0, g: 0, b: 0, a: 1}
   random_order: 0
   loop: 0
-  all_commands: 
+  all_commands: "Warning\n.........\nOxygen supply low. \nPlease resolve the issue.\n"
 --- !u!114 &887056747
 MonoBehaviour:
   m_ObjectHideFlags: 0

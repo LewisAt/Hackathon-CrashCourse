@@ -19,6 +19,7 @@ public class BoardReceive : MonoBehaviour
             if (count == SpawnPoints.Length) return;
             other.GetComponent<BoxCollider>().enabled = false;
             other.transform.position = SpawnPoints[count].transform.position;
+            other.transform.parent = SpawnPoints[count].transform;
             count++;
         }
     }

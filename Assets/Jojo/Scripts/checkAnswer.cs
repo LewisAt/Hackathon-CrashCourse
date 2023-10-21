@@ -51,6 +51,7 @@ public class checkAnswer : MonoBehaviour
         int numberOfInterations = checkInput.Count;
         for (int i = 0; i < numberOfInterations; i++)
         {
+            InputCount[i].transform.DetachChildren();
             checkInput[0].transform.position = PooPosition.transform.position;
             checkInput[0].GetComponent<BoxCollider>().enabled = true;
             Rigidbody rb = checkInput[0].GetComponent<Rigidbody>();
