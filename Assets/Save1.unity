@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043663032, g: 0.04482539, b: 0.059559315, a: 1}
+  m_IndirectSpecularColor: {r: 0.04365543, g: 0.044817843, b: 0.059549738, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1210,6 +1210,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5005721207182606634, guid: d678fa286c5e54aaaa0e465c7f0bb2b4, type: 3}
   m_PrefabInstance: {fileID: 175003739}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &175003751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4759319559704039845, guid: d678fa286c5e54aaaa0e465c7f0bb2b4, type: 3}
+  m_PrefabInstance: {fileID: 175003739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175003740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189022969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2555,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5005721207182606634, guid: 7d100d4b900424462b2fa813e1e2242d, type: 3}
   m_PrefabInstance: {fileID: 469417971}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &469417983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4759319559704039845, guid: 7d100d4b900424462b2fa813e1e2242d, type: 3}
+  m_PrefabInstance: {fileID: 469417971}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469417972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &473599108
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,17 +5515,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
---- !u!114 &1135166701 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4759319559704039845, guid: 3ac5e2232d44849bf83c56a7a0167d42, type: 3}
-  m_PrefabInstance: {fileID: 1135166695}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135166696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1135579649
 GameObject:
   m_ObjectHideFlags: 0
@@ -11035,17 +11046,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
---- !u!114 &2099116686 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4759319559704039845, guid: b05d74aea6e5d41deba648a366d88144, type: 3}
-  m_PrefabInstance: {fileID: 2099116681}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099116682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2099116692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5005721207182606634, guid: b05d74aea6e5d41deba648a366d88144, type: 3}
@@ -11100,29 +11100,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
+      propertyPath: Answer.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[0]
       value: 
-      objectReference: {fileID: 2099116686}
+      objectReference: {fileID: 469417983}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[1]
       value: 
-      objectReference: {fileID: 1957361890175890991}
+      objectReference: {fileID: 576587282328704921}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[2]
       value: 
-      objectReference: {fileID: 5357042507716724721}
+      objectReference: {fileID: 175003751}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[3]
       value: 
-      objectReference: {fileID: 1135166701}
+      objectReference: {fileID: 5357042507716724721}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[4]
       value: 
-      objectReference: {fileID: 576587282328704921}
+      objectReference: {fileID: 1957361890175890991}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[5]
       value: 
-      objectReference: {fileID: 5422727539816104577}
+      objectReference: {fileID: 175003751}
     - target: {fileID: 7598985314925145924, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: m_Name
       value: Board
@@ -12680,17 +12684,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
---- !u!114 &5422727539816104577 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4759319559704039845, guid: 3807d44a9eb584abab5e5817f73d65ea, type: 3}
-  m_PrefabInstance: {fileID: 5422727539816104572}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5422727539816104573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &5422727539816104583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5005721207182606634, guid: 3807d44a9eb584abab5e5817f73d65ea, type: 3}

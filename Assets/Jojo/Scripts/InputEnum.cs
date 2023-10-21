@@ -18,6 +18,6 @@ public class InputEnum : MonoBehaviour
     public ListOfInputs input;
     private void Start()
     {
-        GetComponent<Rigidbody>().AddForce(Vector3.forward);
+        GetComponent<Rigidbody>().AddForce(Vector3.forward * 5);
     }
 }

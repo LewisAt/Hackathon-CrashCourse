@@ -16,9 +16,21 @@ public class checkAnswer : MonoBehaviour
         InputCount = GetComponent<BoardReceive>().SpawnPoints;
         boardReceive = GetComponent<BoardReceive>();
     }
-    public void addtoList(InputEnum inputtedBlock)
+    public void addtoList(int count, InputEnum inputtedBlock)
     {
+        print(Answer.Count + " = answer count and input count is: " + count);
         checkInput.Add(inputtedBlock);
+        if (count == Answer.Count)
+        {
+            if (CheckForCorrectInput() == false)
+            {
+                RemoveBlocks();
+            }
+            else
+            {
+                print("answer is correct!");
+            }
+        }    
     }
 
 
@@ -78,12 +90,13 @@ public class checkAnswer : MonoBehaviour
 
 
             checkInput.RemoveAt(0);
-
             yield return new WaitForSeconds(0.5f);
         }
         GetComponent<BoxCollider>().enabled = false;
+        checkInput = new List<InputEnum>();
         yield return new WaitForSeconds(3f);
         GetComponent<BoxCollider>().enabled = true;
+        boardReceive.count = 0;
 
     }
 }
