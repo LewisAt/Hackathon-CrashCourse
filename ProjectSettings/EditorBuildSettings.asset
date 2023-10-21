@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Save1.unity
     guid: 78f8be950a58fae42a8363542a5b4116
+  - enabled: 1
+    path: Assets/BadEnding.unity
+    guid: 374584a634516fc4cb44b0a9a944834a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5939dbdd18243e049abe28f9226b43d7, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d179bf1e22c67c64ea7e40494f3a1a8d, type: 2}
