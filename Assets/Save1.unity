@@ -1182,17 +1182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
---- !u!114 &175003744 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4759319559704039845, guid: d678fa286c5e54aaaa0e465c7f0bb2b4, type: 3}
-  m_PrefabInstance: {fileID: 175003739}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175003740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8121822af2c214ad1b7cc71061647acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &175003749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5005721207182606634, guid: d678fa286c5e54aaaa0e465c7f0bb2b4, type: 3}
@@ -10770,10 +10759,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
-      propertyPath: Answer.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: Answer.Array.data[0]
       value: 
       objectReference: {fileID: 2099116686}
@@ -10797,10 +10782,6 @@ PrefabInstance:
       propertyPath: Answer.Array.data[5]
       value: 
       objectReference: {fileID: 5422727539816104577}
-    - target: {fileID: 3746050198562214378, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
-      propertyPath: Answer.Array.data[6]
-      value: 
-      objectReference: {fileID: 175003744}
     - target: {fileID: 7598985314925145924, guid: 3b23423b14644428e89b24e9580dd38a, type: 3}
       propertyPath: m_Name
       value: Board
