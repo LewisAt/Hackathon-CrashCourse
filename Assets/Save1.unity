@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04365543, g: 0.044817843, b: 0.059549738, a: 1}
+  m_IndirectSpecularColor: {r: 0.043663032, g: 0.04482539, b: 0.059559315, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1546,6 +1546,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350492804}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &350988575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.75992775
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126086447285181579, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_Name
+      value: Lewis MRTK XR Rig
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
 --- !u!1 &383848510
 GameObject:
   m_ObjectHideFlags: 0
@@ -11861,3 +11918,4 @@ SceneRoots:
   - {fileID: 5422727539816104572}
   - {fileID: 175003739}
   - {fileID: 469417971}
+  - {fileID: 350988575}
