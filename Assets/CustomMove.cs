@@ -1,3 +1,4 @@
+using MixedReality.Toolkit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,17 +6,21 @@ using UnityEngine;
 public class CustomMove : MonoBehaviour
 {
     private Rigidbody rb;
-    Camera cam;
+    public float speed = 2.5f;
+    public Camera cam;
     private void Awake()
     {
-        Camera cam = Camera.main;
         rb = GetComponent<Rigidbody>();
     }
     private void Update()
     {
+        
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
         Vector3 direction = new Vector3(hor,0, ver);
-        rb.velocity = direction;
+        Vector3 newDirection = cam.transform.TransformDirection(direction);
+        Vector3 lastDirection = new Vector3(newDirection.x,0, newDirection.z);
+
+        rb.velocity = lastDirection.normalized * speed; 
     }
 }

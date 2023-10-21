@@ -472,7 +472,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hostTransform: {fileID: 261850665}
-  allowedManipulations: 7
+  allowedManipulations: 3
   allowedInteractionTypes: -2147483641
   applyTorque: 1
   springForceSoftness: 0.1
