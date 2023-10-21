@@ -461,6 +461,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051228597}
   m_CullTransparentMesh: 1
+--- !u!1001 &2075101158
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397439465308863166, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126086447285181579, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+      propertyPath: m_Name
+      value: Lewis MRTK XR Rig
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5333316474226110691, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+    - {fileID: 4752108917863791539, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+    - {fileID: 6378151747569838915, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb05564efb2f00a4eb089ea45d47db2a, type: 3}
 --- !u!1 &2098368628
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,8 +632,8 @@ RectTransform:
   m_GameObject: {fileID: 2098368628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 22.573673}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2051228598}
   m_Father: {fileID: 0}
@@ -678,3 +738,4 @@ SceneRoots:
   - {fileID: 1784265985}
   - {fileID: 2129625848}
   - {fileID: 2098368633}
+  - {fileID: 2075101158}
