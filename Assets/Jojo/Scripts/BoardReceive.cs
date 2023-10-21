@@ -20,9 +20,9 @@ public class BoardReceive : MonoBehaviour
             if (SpawnPoints[count].transform.childCount >= 0)
             {
                 print(other.GetComponent<InputEnum>().input + " joined");
+                other.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 other.transform.parent = SpawnPoints[count].transform;
                 other.transform.localPosition = Vector3.zero;
-                other.transform.rotation = Quaternion.identity;
                 other.GetComponent<BoxCollider>().enabled = false;
                 other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                 count++;
