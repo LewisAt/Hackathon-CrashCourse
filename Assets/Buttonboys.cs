@@ -9,9 +9,13 @@ public class Buttonboys : MonoBehaviour
     {
         if(other.tag == "Hands")
         { 
-            if(check.CheckForCorrectInput())
+            if(check.CheckForCorrectInput() == true)
             {
-
+                GameWin();
+            }
+            else
+            {
+                check.RemoveBlocks();
             }
         }
     }
