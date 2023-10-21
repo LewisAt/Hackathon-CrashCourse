@@ -13,7 +13,6 @@ public class BoardReceive : MonoBehaviour
         AnswerCheckScript = GetComponent<checkAnswer>();
         count = 0;
     }
-
     public void OnTriggerEnter(Collider other)
     {
 
@@ -22,7 +21,7 @@ public class BoardReceive : MonoBehaviour
             Debug.Log(SpawnPoints[count].transform.childCount);
             Debug.Log(count);
 
-            if(SpawnPoints[count].transform.childCount == 0)
+            if(SpawnPoints[count].transform.childCount == 0 && count < 6)
             {
                 print(other.GetComponent<InputEnum>().input + " joined");
                 other.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
@@ -30,7 +29,7 @@ public class BoardReceive : MonoBehaviour
                 other.transform.localPosition = Vector3.zero;
                 other.GetComponent<BoxCollider>().enabled = false;
                 other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-                AnswerCheckScript.addThingy(other.gameObject);
+                AnswerCheckScript.addtoList(other.GetComponent<InputEnum>());
                 count++;
             }
             

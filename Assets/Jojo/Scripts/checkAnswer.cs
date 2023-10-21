@@ -16,11 +16,12 @@ public class checkAnswer : MonoBehaviour
         InputCount = GetComponent<BoardReceive>().SpawnPoints;
         boardReceive = GetComponent<BoardReceive>();
     }
-    public void OnTriggerEnter(Collider other)
+    public void addtoList(InputEnum inputtedBlock)
     {
-        
-        
+        checkInput.Add(inputtedBlock);
     }
+
+
     public void addThingy(Collider other)
     {
         if (other.GetComponent<InputEnum>() != null)
@@ -29,6 +30,7 @@ public class checkAnswer : MonoBehaviour
             {
                 if (InputCount[i].transform.childCount == 0)
                 {
+                   
                 }
                 else
                 {
@@ -39,7 +41,7 @@ public class checkAnswer : MonoBehaviour
         }
         
     }
-    void CheckForCorrectInput()
+    public bool CheckForCorrectInput()
     {
 
         for (int i = 0; i < Answer.Count; i++)
@@ -47,9 +49,10 @@ public class checkAnswer : MonoBehaviour
             if (checkInput[i] != Answer[i])
             {
                 print("wrong answer in" + i);
-                continue;
+                return false;
             }
         }
+        return true;
     }
 
     public void RemoveBlocks()
