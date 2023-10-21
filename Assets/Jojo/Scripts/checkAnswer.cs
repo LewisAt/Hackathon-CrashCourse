@@ -29,7 +29,6 @@ public class checkAnswer : MonoBehaviour
             {
                 if (InputCount[i].transform.childCount == 0)
                 {
-                    checkInput.Add(checkInput[i]);
                 }
                 else
                 {
@@ -81,7 +80,6 @@ public class checkAnswer : MonoBehaviour
         }
         GetComponent<BoxCollider>().enabled = false;
         yield return new WaitForSeconds(3f);
-        boardReceive.count = 0;
         GetComponent<BoxCollider>().enabled = true;
 
     }
