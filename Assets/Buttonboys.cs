@@ -11,7 +11,8 @@ public class Buttonboys : MonoBehaviour
         { 
             if(check.CheckForCorrectInput() == true)
             {
-                GameWin();
+                Debug.Log("you won ");
+                //GameWin();
             }
             else
             {
