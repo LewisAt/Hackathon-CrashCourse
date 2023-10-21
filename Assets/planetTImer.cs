@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class planetTImer : MonoBehaviour
@@ -26,6 +27,7 @@ public class planetTImer : MonoBehaviour
         Planet.transform.position = Vector3.Lerp(StartPosition, new Vector3(endPosition.transform.position.x - 500, 0, 0), Fill);
         if(timer <=0)
         {
+            SceneManager.LoadScene(3);
             //end game load end scene
         }
     }
