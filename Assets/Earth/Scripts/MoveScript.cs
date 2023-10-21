@@ -32,7 +32,7 @@ namespace DigitalRuby.Earth
             transform.position += (transform.right * Speed * Time.deltaTime * move);
 
             var pitch = -150.0f * Time.deltaTime;
-            var yaw = 10f * Time.deltaTime;
+            var yaw = 0.001f * Time.deltaTime;
             var roll = (true ? yaw : 0.0f);
             transform.Rotate(0, yaw, 0);
         }
