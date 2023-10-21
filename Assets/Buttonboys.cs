@@ -6,6 +6,8 @@ public class Buttonboys : MonoBehaviour
 {
     public checkAnswer check;
     public AudioClip winGameDialog;
+    public AudioClip panic;
+    public AudioSource mic;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Hands")
@@ -20,7 +22,6 @@ public class Buttonboys : MonoBehaviour
             }
         }
     }
-
     public void GameWin()
     {
 
