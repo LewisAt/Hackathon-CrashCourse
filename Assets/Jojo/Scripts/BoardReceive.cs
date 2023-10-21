@@ -6,7 +6,7 @@ public class BoardReceive : MonoBehaviour
 {
     public GameObject[] SpawnPoints;
     private checkAnswer AnswerCheckScript;
-     int count;
+    public int count;
 
     private void Start()
     {
@@ -18,10 +18,12 @@ public class BoardReceive : MonoBehaviour
 
         if (other.GetComponent<InputEnum>() != null)
         {
-            Debug.Log(SpawnPoints[count].transform.childCount);
             Debug.Log(count);
-
-            if(SpawnPoints[count].transform.childCount == 0 && count < 6)
+            if(count > 5)
+            {
+                return;
+            }
+            if(SpawnPoints[count].transform.childCount == 0)
             {
                 print(other.GetComponent<InputEnum>().input + " joined");
                 other.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
