@@ -16,12 +16,4 @@ public class InputEnum : MonoBehaviour
         Void
     }
     public ListOfInputs input;
-    Vector3 spawn;
-
-    private void Start()
-    {
-        spawn = transform.position;
-    }
-
-
 }
