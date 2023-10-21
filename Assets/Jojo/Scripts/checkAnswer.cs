@@ -58,7 +58,7 @@ public class checkAnswer : MonoBehaviour
             checkInput.RemoveAt(0);
             yield return new WaitForSeconds(0.2f);
         }
-
+        
     }
 
 
