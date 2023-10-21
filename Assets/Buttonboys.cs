@@ -8,9 +8,15 @@ public class Buttonboys : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Hands")
-        {
-
-            check.RemoveBlocks();    
+        { 
+            if(check.CheckForCorrectInput() == true)
+            {
+                GameWin();
+            }
+            else
+            {
+                check.RemoveBlocks();
+            }
         }
     }
 }
